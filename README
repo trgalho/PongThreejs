@@ -1,0 +1,8 @@
+Implementação do jogo Pong utilizando Three.js R78
+
+A motivação da implementação deste jogo foi com intuito de aprender mais sobre a biblioteca Three.js.
+Posteriormente, adicionado o framework Bootstrap para ter responsividade plena na tela de início do jogo.
+
+Todo jogo é executado dentro da função run(). Que contém todas outras funções necessárias para atualização da tela, movimentação dos pads e detecção de colisão.
+Os pads são controlados pelo mouse e as teclas SETA PARA CIMA e SETA PARA BAIXO.
+Ainda não foi implementada versão singleplayer.
