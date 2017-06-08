@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Pong - Three.js R78</title>
+	
+	<script src="pongGraphics.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/threejs/r78/three.min.js"></script>	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	 <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet"> 
+	<style type="text/css" media="screen">
+		body{
+			overflow: hidden;
+			background: rgb(33,204,157);
+			text-align: center;
+		}
+		div#bottomBar{
+			position: absolute;
+			bottom: 5vh;
+			width: 100vw;
+			text-align: center;
+		}
+		span.ShowPoint{
+			background: rgba(27,27,27,0.5);
+			width: 15vh;
+			border-radius: 25%;
+		    position: absolute;
+			top: 2%;
+		    z-index: 50;
+			font-size: 15vh;
+			font-weight: bold;
+			font-family: fantasy;
+		}
+		.vertical-center {
+  			position: absolute;
+  			top: 50vh;
+  			transform: translate(0,-50%);
+		}
+		.jumbotron{
+			font-family: Philosopher, sans-serif;
+			color: rgb(33,204,157);
+			background: linear-gradient(white,#CCCCCC);
+		}
+	</style>
+</head>
+<body>
+	<div id="splash" class="container vertical-center col-xs-10 col-xs-offset-1">
+		<div id="jumbo" class="jumbotron  col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+			<div id="splashPaused" class="row" style="display: none"><h1><spam class='glyphicon glyphicon-pause'></spam><br>Jogo pausado</h1></div>';
+			<div id='rows'>
+				<div class="row">
+					<h1>PONG</h1>
+				</div>
+				<div class="row">
+					<h1>Three.js</h1>
+				</div>
+				<h3><btn class="btn btn-primary" onClick="run()"><bold>INICIAR <spam class="glyphicon glyphicon-play"></bold></btn></h3>
+			</div>
+		</div>
+
+	</div>
+	<span class='ShowPoint' id='leftPad'></span><span class='ShowPoint' id='rightPad'></span>
+
+</body>
+</html>
