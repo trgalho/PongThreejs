@@ -127,20 +127,16 @@ function run(){
                             delta = {x: leftPad.position.x - point.x, y: leftPad.position.y - point.y};
                     if(delta){
                         var anglePoint = delta.x/delta.y;
-                        if(false){
-                            invertXSpeed();
+                        
+                        if(anglePoint.x - anglePoint.y < 0){
+                            increaseYSpeed();
                             invertYSpeed();
                         }
-                        else {
-                            if(anglePoint.x - anglePoint.y < 0){
-                                increaseYSpeed();
-                                invertYSpeed();
-                            }
-                            else{
-                                increaseXSpeed();
-                                invertXSpeed();
-                            }
+                        else{
+                            increaseXSpeed();
+                            invertXSpeed();
                         }
+                        
                         moveBall();
                         return;
                     }

@@ -1,0 +1,23 @@
+{
+  "name": "pongthreejs",
+  "version": "1.0.0",
+  "description": "Jogo Pong implementado usando biblioteca ThreeJS",
+  "main": "pong.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trgalho/PongThreejs.git"
+  },
+  "author": "Talisson Galho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/trgalho/PongThreejs/issues"
+  },
+  "homepage": "https://github.com/trgalho/PongThreejs#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "three": "^0.78.0"
+  }
+}

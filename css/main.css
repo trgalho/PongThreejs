@@ -1,0 +1,32 @@
+body{
+    overflow: hidden;
+    background: rgb(33,204,157);
+    text-align: center;
+}
+div#bottomBar{
+    position: absolute;
+    bottom: 5vh;
+    width: 100vw;
+    text-align: center;
+}
+span.showPoints{
+    background: rgba(27,27,27,0.5);
+    width: 15vh;
+    border-radius: 25%;
+    position: absolute;
+    top: 2%;
+    z-index: 50;
+    font-size: 15vh;
+    font-weight: bold;
+    font-family: fantasy;
+}
+.vertical-center {
+    position: absolute;
+    top: 50vh;
+    transform: translate(0,-50%);
+}
+.jumbotron{
+    font-family: Philosopher, sans-serif;
+    color: rgb(33,204,157);
+    background: linear-gradient(white,#CCCCCC);
+}
